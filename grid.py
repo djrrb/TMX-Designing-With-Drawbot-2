@@ -16,4 +16,4 @@ for page in range(10):
             fill(random(), random(), random())
             oval(x, y, 100, 100)
             
-saveImage('~/desktop/colorfulGrid.gif')
+#saveImage('~/desktop/colorfulGrid.gif')

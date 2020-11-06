@@ -22,9 +22,18 @@ for fontName in installedFonts():
 
 # until there is no more formatted string left
 # make a new page with a textbox
+
+# remember, a “while” loop is tricky
+# we have to make sure the condition
+# will become false at some point
+# otherwise the program will be in an infinite loop!
 while fs:
     newPage('A3Landscape')
+    # determine the dimensions of the content
     contentWidth = width()-margin*2
     contentHeight = height()-margin*2
     translate(margin, margin)
+    # draw our text box
+    # be sure to reset the fs varaible
+    # to any overflow that is returned
     fs = textBox(fs, (0, 0, contentWidth, contentHeight))
