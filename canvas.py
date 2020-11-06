@@ -5,6 +5,7 @@ for page in range(360):
     
     # make new page
     newPage(1000, 1000)
+    frameDuration(1/30)
 
     stroke(1, 0, 0)
     fill(None)
